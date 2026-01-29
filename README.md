@@ -6,7 +6,7 @@ This repository explores the internal mechanisms of autoencoders using symbolic 
 
 *   Trains autoencoders on tabular (UCI Forest Cover) and text (IMDB embeddings) data.
 *   Extracts latent space representations ($z$). 
-*   Uses **Symbolic Regression (PySR)** to discover closed-form equations $z_i = f(x)$ connecting inputs to latent dimensions.
+*   Uses Symbolic Regression (PySR) to discover closed-form equations $z_i = f(x)$ connecting inputs to latent dimensions.
 *   Analyzes feature importance based on their frequency in the discovered symbolic formulas.
 *   Derives symbolic laws governing reconstruction error as a function of latent dimension and feature properties.
 
@@ -23,7 +23,7 @@ The pipeline consists of the following steps:
 
 ## Why Symbolic Regression?
 
-Deep learning models are often criticized as "black boxes." While we can measure their performance, we rarely understand their internal logic. Symbolic regression bridges this gap by translating complex neural weights into explicit mathematical formulas. This reveals:
+Neural networks are often labeled as "black boxes". While we can measure their performance, we rarely understand their internal logic. Symbolic regression bridges this gap by translating complex neural weights into explicit mathematical formulas. This reveals:
 *   **Interaction Effects**: How features are combined (e.g., linear sums vs. non-linear interactions).
 *   **Dimensional Collapse**: Explicitly seeing which inputs map to zero/constant in the latent space.
 
